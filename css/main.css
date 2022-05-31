@@ -100,6 +100,14 @@ header{
     text-decoration: none;
 }
 
+.header__nav-link:hover{
+    color: #333D4B;
+}
+
+.header__nav-link:active{
+    opacity: 0.5;
+}
+
 /* - - - - MAIN - - - - */
 
 .hero__container {
@@ -127,7 +135,7 @@ header{
 }
 
 .hero__text {
-    width: 445px;
+    width: 440px;
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 400;
@@ -231,6 +239,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 351px;
 }
 
 .why__heading {
@@ -248,7 +257,7 @@ header{
 }
 
 .why__text {
-    width: 540px;
+    width: 528px;
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 400;
@@ -323,4 +332,204 @@ header{
     color: #FEFCF7;
     margin: 0;
     padding: 0;
+}
+
+.how {
+    margin-bottom: 200px;
+}
+
+.how__heading {
+    width: 255px;
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+.how__list {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 64px;
+}
+
+.how__item {
+    width: 380px;
+    padding-right: 95px;
+    position: relative;
+    padding-top: 98px;
+}
+
+.how__item::before{
+    content: "";
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background-color: #FEFCF7;
+    border: 2px solid #0E8784;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.how__item::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(253, 214, 186, 1);
+    position: absolute;
+    /* border: 2px solid #FDD6BA; */
+    top: 15.5px;
+}
+
+.how__item:last-child::after {
+    display: none;
+}
+
+.how__item-nomber {
+    width: 90px;
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FDD6BA;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.how__item-heading {
+    width: 215px;
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+    margin: 0;
+    margin-bottom: 42px;
+}
+
+.how__itrem-text {
+    width: 280px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+    margin: 0;
+}
+
+.how__link {
+    background-color: #0E8784;
+    border-radius: 6px;
+    padding: 15px 31px;
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FEFCF7;
+    text-decoration: none;
+}
+
+.how__link:hover{
+    background-color: #66D2CF;
+}
+
+.how__link:active{
+    opacity: 0.5;
+}
+
+/* - - - - FOOTER - - - -  */
+
+footer{
+    margin-bottom: 88px;
+}
+
+.footer__container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: #2C343E;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__bottom-link {
+    margin-right: -350px;
+}
+
+.footer__bottom-img {
+    width: 235px;
+    height: 25px;
+}
+
+.footer__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer__item:nth-child(2) {
+    margin-right: 32px;
+    margin-left: 32px;
+}
+
+.footer__item-link {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+    text-decoration: none;
+}
+
+.footer__item-link:hover{
+    color: #FEFCF7;
+}
+
+.footer__item-link:active{
+    opacity: 0.8;
+ }
+
+.footer__list2 {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer__item2:nth-child(2) {
+    margin-right: 24px;
+    margin-left: 24px;
+}
+
+.footer__item2-img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer__item2-img:hover{
+    background-color: #FDD6BA;
+}
+
+.footer__item2-img:active{
+   opacity: 0.5;
 }
